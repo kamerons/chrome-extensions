@@ -1,0 +1,22 @@
+{
+	"name": "Random Scripts",
+	"description": "Do anything",
+	"version": "1.0",
+	"manifest_version": 3,
+	"content_scripts": [
+		{
+			"matches": [
+				"https://mangaonlineteam.com/manga/*"
+			],
+			"js": [
+				"/content_script.js"
+			]
+		}
+	],
+	"permissions": [
+		"activeTab"
+	],
+	"host_permissions": [
+		"https://mangaonlineteam.com/manga/*"
+	]
+}
